@@ -1,5 +1,7 @@
 import { route } from './router';
 
+
+
 route('/', 'home', function() {
   this.title = 'Formularz logowania';
   this.action = 'send';
@@ -33,7 +35,7 @@ route('/', 'home', function() {
             errorDiv.className = 'error'
             let errorText = document.createTextNode('Wprowadziłeś nieprawidłowy login lub hasło!')
             errorDiv.appendChild(errorText)
-            document.querySelector('.login').appendChild(errorDiv)
+            document.querySelector('#app').appendChild(errorDiv)
             sessionStorage.setItem('login', 'failed');
         }
     })
