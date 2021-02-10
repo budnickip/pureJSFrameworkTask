@@ -3,11 +3,11 @@
 live:
 https://budnickip.github.io/pureJSFrameworkTask/
 
-Oprócz standardowych zagadnień, do aplikacji została dodana walidacja formularzy(formularz nie przepuści nast dalej, jeśli pole login lub password będzie puste i wyświetli nam komunikat o błędzie). Podczas ładowania danych z API wyświetlany jest Loader, aby użytkownik wiedział, że aplikacja się nie zawiesiła i czeka na odpowiedź. Użytkownik próbując wejść na stronę:
+Oprócz standardowych zagadnień, do aplikacji została dodana walidacja formularzy(formularz nie przepuści nas dalej, jeśli pole login lub password będzie puste i wyświetli nam komunikat o błędzie). Podczas ładowania danych z API wyświetlany jest Loader, aby użytkownik wiedział, że aplikacja się nie zawiesiła i czeka na odpowiedź. Użytkownik próbując wejść na stronę:
 
 https://budnickip.github.io/pureJSFrameworkTask/#/success
 
-bez wcześniejszego logowania się, otrzyma komunikat, że musi najpierw się zalogować(najlepiej sprawdzić to w oknie incognito, ponieważ gdy już raz się zalogujemy to nasze dane zostają zapisane do sessionStorage)
+bez wcześniejszego logowania się otrzyma komunikat, że musi najpierw się zalogować(najlepiej sprawdzić to w oknie incognito, ponieważ gdy już raz się zalogujemy to nasze dane zostają zapisane do sessionStorage)
 
 Screenshot widoku home
 
