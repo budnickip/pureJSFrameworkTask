@@ -1,7 +1,7 @@
 // Simple JavaScript Templating
 // John Resig - https://johnresig.com/ - MIT Licensed
-import home from './scripts/home'
-import success from './scripts/success'
+import home from './src/scripts/home'
+import success from './src/scripts/success'
 const cache = {};
 
 export const engine = (str, data) => {

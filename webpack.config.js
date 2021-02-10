@@ -4,7 +4,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin')
 module.exports = {
   mode: 'development',
   devtool: 'inline-source-map',
-  entry: './app.js',
+  entry: './src/app.js',
   output: {
     filename: 'app.js',
     path: path.resolve(__dirname, './docs')
@@ -38,7 +38,8 @@ module.exports = {
                 ];
               }
             }
-          }
+          },
+          {loader: 'sass-loader'}
         ]
       },
       {
@@ -49,28 +50,6 @@ module.exports = {
           }
         ]
       },   
-      {
-        test: /\.(jpe?g|png)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              outputPath: 'assets/img',
-            },
-          },
-        ],
-      },
-      {
-        test: /\.(gif|ico|webp|pdf|mp4|webm)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              outputPath: 'assets',
-            },
-          },
-        ],
-      },
     ]
   },
   plugins: [
