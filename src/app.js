@@ -8,7 +8,6 @@ route('/', 'home', function() {
   this.$on('.login-form__button', 'click', (event)=>{
     let loginValidation = validateLogin()
     let passwordValidation = validatePassword()
-    console.log(`login: ${loginValidation}, password: ${passwordValidation}`)
     if(loginValidation && passwordValidation){
         const ob = {
             username: document.querySelector('#login').value,
